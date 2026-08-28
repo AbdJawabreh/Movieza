@@ -1,3 +1,19 @@
+:root{
+    --bg: #12161C;
+    --panel: #1B222B;
+    --panel-alt: #212A34;
+    --text: #ECE8DE;
+    --text-muted: #A7AFB9;
+    --gold: #E3A857;
+    --teal: #4FB6A8;
+    --coral: #E2725B;
+    --border: rgba(236, 232, 222, 0.10);
+ 
+    --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+    --font-body: 'Inter', 'Segoe UI', sans-serif;
+}
+
 h1{
     display: flex;
     justify-content: center;
@@ -7,4 +23,105 @@ h5{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+main{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 24px;
+}
+ 
+.section{
+    margin-bottom: 70px;
+}
+ 
+.section:last-child{
+    margin-bottom: 0;
+}
+ 
+.section-eyebrow{
+    font-family: var(--font-mono);
+    color: var(--coral);
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+}
+ 
+.section h2{
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+}
+ 
+.member-conteinr{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 24px;
+}
+ 
+.member-card{
+    background-color: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+ 
+.member-card:hover{
+    transform: translateY(-6px);
+    border-color: rgba(236, 232, 222, 0.25);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.35);
+}
+ 
+.card-accent{
+    height: 4px;
+    width: 100%;
+}
+ 
+.accent-gold{ background-color: var(--gold); }
+.accent-teal{ background-color: var(--teal); }
+.accent-coral{ background-color: var(--coral); }
+ 
+.member-card img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(15%);
+}
+ 
+.card-body{
+    padding: 20px;
+    text-align: left;
+}
+ 
+.role-tag{
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--teal);
+    background-color: rgba(79, 182, 168, 0.12);
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+}
+ 
+.member-name{
+    font-family: var(--font-display);
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+ 
+.member-desc{
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-muted);
 }
