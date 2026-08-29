@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="Home.js" defer></script>
+</head>
+<body>
+     <audio id="music">
+    <source src="music/leberch-film-517381.mp3" type="audio/mpeg">
+     </audio>
+
+     <button id="musicBtn"> Play Music</button>
+    <div class="signup-form">
+        <h1>Sign Up</h1>
+        <form id="signupForm">
+            <div class="container">
+                <label for="username" >Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+                
+            <br>
+            <div class="container">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+            <div class="container">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <br>
+            <div class="container">
+                <label for="age">Age:</label>
+                <select id="age" name="age" required>
+                    <option value="">Select your age</option>
+                    <option value="18-24">18-24</option>
+                    <option value="25-34">25-34</option>
+                    <option value="35-44">35-44</option>
+                    <option value="45-54">45-54</option>
+                    <option value="55+">55+</option>
+                </select>
+            </div>
+            <br>
+            <div class="container">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <br>
+            <label for="terms">I agree to the terms:</label>
+            <input type="checkbox" id="terms" name="terms" required>
+            <br>
+            <a href="Home.html" id="homee">Home</a>
+            <br>
+            <a href="Home.html" id="button">Sign Up</a>
+        </form>
+    </div>
+
+
+</body>
+</html>
