@@ -139,7 +139,7 @@ main{
 .scrol::scroll-button(left) {
     content: '⇥';
     border: none;
-    background-color: rgb(55, 0, 219);
+    background-color: #ec0000;
     font-family: consolas;
     font-size: 1rem;
     color: white;
@@ -193,7 +193,7 @@ main{
 .scrol2::scroll-button(left) {
     content: '⇥';
     border: none;
-    background-color: rgb(55, 0, 219);
+      background-color: #ec0000;
     font-family: consolas;
     font-size: 1rem;
     color: white;
@@ -247,7 +247,7 @@ main{
 .scrol3::scroll-button(left) {
     content: '⇥';
     border: none;
-    background-color: rgb(55, 0, 219);
+      background-color: #ec0000;
     font-family: consolas;
     font-size: 1rem;
     color: white;
