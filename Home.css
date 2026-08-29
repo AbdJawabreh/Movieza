@@ -4,33 +4,75 @@
     --panel-alt: #212A34;
     --text: #ECE8DE;
     --text-muted: #A7AFB9;
-    --gold: #E3A857;
-    --teal: #4FB6A8;
-    --coral: #E2725B;
+    --gold: #e90c0c;
+    --teal: #e90c0c;
+    --coral: ;
     --border: rgba(236, 232, 222, 0.10);
  
+   
+    --panel: #260303;
+    --panel-alt: #1a1a1a;
+
+    --text: #ffffff;
+    --text-muted: #a3a3a3;
+
+    --red: #E50914;
+    --red-dark: #8B0000;
+
+    --border: rgba(255, 255, 255, 0.10);
+
     --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
     --font-mono: 'JetBrains Mono', 'Courier New', monospace;
     --font-body: 'Inter', 'Segoe UI', sans-serif;
 }
+body {
+    max-width: 2100px;
+    margin: 0;
+    padding: 40px 24px 70px;
 
+    background:
+        radial-gradient(
+            circle at top center,
+            rgba(229, 9, 20, 0.16),
+            transparent 45%
+        ),
+        #050505;
+
+    color: var(--text);
+
+    font-family: var(--font-body);
+}
 h1{
+   background: linear-gradient(
+        90deg,
+        #e4040f,
+        #965858,
+        #3c1f1f
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 h5{
+    color:#00FFFF;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 main{
-    max-width: 1100px;
+
+    
     margin: 0 auto;
     padding: 70px 24px;
 }
  
 .section{
+
     margin-bottom: 70px;
 }
  
@@ -40,7 +82,7 @@ main{
  
 .section-eyebrow{
     font-family: var(--font-mono);
-    color: var(--coral);
+     color:#00FFFF;
     font-size: 14px;
     letter-spacing: 2px;
     margin-bottom: 6px;
@@ -56,12 +98,190 @@ main{
 }
  
 .member-conteinr{
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 24px;
 }
- 
+ .scrol {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    margin: 3em auto;
+    gap: 1em;
+    scroll-behavior: smooth;
+    anchor-name: --scrol;
+    scroll-snap-type: x mandatory;
+    scroll-marker-group: after;
+}
+
+.scrol::scroll-marker-group {
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+}
+.member-card::scroll-marker{
+    content: '';
+    height: 1em;
+    width: 1em;
+    background-color: cadetblue;
+    border-radius: 50%;
+}
+.member-card::scroll-marker:target-current{
+    background-color: crimson;
+}
+
+.scrol::-webkit-scrollbar {
+    display: none;
+
+}
+
+.scrol::scroll-button(right),
+.scrol::scroll-button(left) {
+    content: '⇥';
+    border: none;
+    background-color: rgb(55, 0, 219);
+    font-family: consolas;
+    font-size: 1rem;
+    color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding-bottom: .1em;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --scrol;
+    position-area: right center;
+    translate: -50%;
+}
+
+.scrol::scroll-button(left) {
+    content: '⇤';
+    position-area: left center;
+    translate: 50%;
+}
+
+.scrol::scroll-button(right):disabled,
+.scrol::scroll-button(left):disabled {
+    opacity: 0.5;
+    cursor: auto;
+
+}
+
+.scrol2{
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    margin: 3em auto;
+    gap: 1em;
+    scroll-behavior:smooth;
+    anchor-name: --scrol2;
+    scroll-snap-type: x mandatory;
+    scroll-marker-group: after;
+}
+
+.scrol2::scroll-marker-group {
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+}
+.scrol2::-webkit-scrollbar {
+    display: none;
+
+}
+
+.scrol2::scroll-button(right),
+.scrol2::scroll-button(left) {
+    content: '⇥';
+    border: none;
+    background-color: rgb(55, 0, 219);
+    font-family: consolas;
+    font-size: 1rem;
+    color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding-bottom: .1em;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --scrol2;
+    position-area: right center;
+    translate: -50%;
+}
+
+.scrol2::scroll-button(left) {
+    content: '⇤';
+    position-area: left center;
+    translate: 50%;
+}
+
+.scrol2::scroll-button(right):disabled,
+.scrol2::scroll-button(left):disabled {
+    opacity: 0.5;
+    cursor: auto;
+
+}
+
+.scrol3{
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    margin: 3em auto;
+    gap: 1em;
+    scroll-behavior: smooth;
+    anchor-name: --scrol3;
+    scroll-snap-type: x mandatory;
+    scroll-marker-group: after;
+}
+
+.scrol3::scroll-marker-group {
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+}
+.scrol3::-webkit-scrollbar {
+    display: none;
+
+}
+
+.scrol3::scroll-button(right),
+.scrol3::scroll-button(left) {
+    content: '⇥';
+    border: none;
+    background-color: rgb(55, 0, 219);
+    font-family: consolas;
+    font-size: 1rem;
+    color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding-bottom: .1em;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --scrol3;
+    position-area: right center;
+    translate: -50%;
+}
+
+.scrol3::scroll-button(left) {
+    content: '⇤';
+    position-area: left center;
+    translate: 50%;
+}
+
+.scrol3::scroll-button(right):disabled,
+.scrol3::scroll-button(left):disabled {
+    opacity: 0.5;
+    cursor: auto;
+
+}
+@media(max-width) {
+    .member-card {
+        flex: 0 0 100%;
+    }
+}
 .member-card{
+
+    flex: 0 0 330px;
     background-color: var(--panel);
     border: 1px solid var(--border);
     border-radius: 12px;
@@ -72,6 +292,7 @@ main{
 }
  
 .member-card:hover{
+    background-color: rgb(108, 74, 34);
     transform: translateY(-6px);
     border-color: rgba(236, 232, 222, 0.25);
     box-shadow: 0 16px 30px rgba(0, 0, 0, 0.35);
