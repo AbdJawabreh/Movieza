@@ -359,6 +359,7 @@ main{
 }
 
 #musicBtn:hover {
+    
     background-color: #e50914;
     color: white;
     transform: scale(1.05);
