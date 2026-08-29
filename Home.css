@@ -125,3 +125,21 @@ main{
     line-height: 1.6;
     color: var(--text-muted);
 }
+#musicBtn {
+    padding: 12px 25px;
+    border: 2px solid #e50914;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #e50914;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#musicBtn:hover {
+    background-color: #e50914;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #e50914;
+}
