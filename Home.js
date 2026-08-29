@@ -24,7 +24,7 @@ if (music && musicBtn) {
             musicBtn.textContent = "⏸ Pause Music";
         } else {
             music.pause();
-            musicBtn.textContent = "🎵 Play Music";
+            musicBtn.textContent = "Play Music";
         }
 
     });
