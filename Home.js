@@ -68,6 +68,41 @@ stars.forEach((star)=>{
     
 });
 
+let check = document.querySelectorAll(".check");
+let Watched = document.getElementById("Watched");
+
+check.forEach((check)=>{
+
+    let FavoriteCardCopy = null;
+    let iswatched = false;
+
+    check.addEventListener("click",() => {
+        let FavoriteCard = check.closest(".member-card"); 
+
+        if (!isfavorite) {
+            check.style.color = "goldenrod";
+            FavoriteCardCopy = FavoriteCard.cloneNode(true);
+            Favorites.prepend(FavoriteCardCopy);
+            iswatched = true;
+        }
+
+        else{
+            check.style.color = "black";
+            FavoriteCardCopy.remove();
+            iswatched = false;
+        }
+
+        FavoriteCardCopy.addEventListener("click", () =>{
+        check.style.color = "black";
+        FavoriteCardCopy.remove();
+        iswatched = false;
+    });
+    });
+    
+    
+    
+});
+
 const menuButton = document.getElementById("menuButton");
 const menu = document.getElementById("menu");
 
