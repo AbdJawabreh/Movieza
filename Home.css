@@ -438,7 +438,12 @@ h5 {
     text-align: left;
 }
 
-.role-tag {
+ .card-span{
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.role-tag{
     display: inline-block;
     font-family: var(--font-mono);
     font-size: 11px;
@@ -449,8 +454,14 @@ h5 {
     padding: 4px 10px;
     border-radius: 999px;
     margin-bottom: 10px;
+    margin-top: 5px;
 }
 
+.card-span .star{
+    background:none ;
+    border: none;
+    font-size: 30px;
+}
 .member-name {
     font-family: var(--font-display);
     font-size: 19px;
