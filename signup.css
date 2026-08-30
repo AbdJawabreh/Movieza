@@ -82,6 +82,9 @@ select{
     transform: scale(1.05);
 }
 #musicBtn {
+    display: flex;
+    flex-direction: column;
+    text-align: top;
     padding: 12px 25px;
     border: 2px solid #e50914;
     border-radius: 30px;
