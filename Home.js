@@ -24,7 +24,7 @@ if (music && musicBtn) {
             musicBtn.textContent = "⏸ Pause Music";
         } else {
             music.pause();
-            musicBtn.textContent = "🎵 Play Music";
+            musicBtn.textContent = "Play Music";
         }
 
     });
@@ -47,3 +47,9 @@ if (form) {
     });
 
 }
+const menuButton = document.getElementById("menuButton");
+const menu = document.getElementById("menu");
+
+menuButton.addEventListener("click", function () {
+    menu.classList.toggle("active");
+});
