@@ -33,7 +33,7 @@
 }
 body {
     max-width: 2100px;
-    margin: 0;
+
     padding: 40px 24px 70px;
      
     background:
@@ -114,12 +114,7 @@ h5{
 .search-input::placeholder, .search-icon{
     color: rgba(0, 0, 0.03);
 }
-main{
 
-    
-    margin: 0 auto;
-    padding: 70px 24px;
-}
  
 .section{
 
@@ -535,10 +530,21 @@ header{
     display: none;
 }
 #menu.active {
+    border:2px solid var(--red-dark);
+    padding: 15px;
+     gap: 3px;
     display: flex;
     flex-direction: column;
-    background:transparent;
-    width: 200px;
+    background:black;
+    width: 150px;
+     height: 300px;
+     border-radius: 30px;
+  
+}
+.icon-mune{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
  a{
     text-decoration: none;
@@ -548,6 +554,8 @@ header{
     cursor: pointer;
 }
  a:hover{
-    color: #e50914;
+    border:2px solid #ffffff;
+    border-radius: 12px;
+ background-color: #e50914;
     transform: scale(1.1);
 }
