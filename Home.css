@@ -1,4 +1,4 @@
-:root{
+:root {
     --bg: #12161C;
     --panel: #1B222B;
     --panel-alt: #212A34;
@@ -8,8 +8,8 @@
     --teal: #e90c0c;
     --coral: ;
     --border: rgba(236, 232, 222, 0.10);
- 
-   
+
+
     --panel: #260303;
     --panel-alt: #1a1a1a;
 
@@ -25,37 +25,36 @@
     --font-mono: 'JetBrains Mono', 'Courier New', monospace;
     --font-body: 'Inter', 'Segoe UI', sans-serif;
 }
-.icon{
-   display: flex;
-      position:relative;
-      top: 180px;
-      right: -538px;
+
+.icon {
+    display: flex;
+    position: relative;
+    top: 180px;
+    right: -538px;
 }
+
 body {
     max-width: 2100px;
 
     padding: 40px 24px 70px;
-     
+
     background:
-        radial-gradient(
-            circle at top center,
+        radial-gradient(circle at top center,
             rgba(229, 9, 20, 0.16),
-            transparent 45%
-        ),
+            transparent 45%),
         #050505;
 
     color: var(--text);
 
     font-family: var(--font-body);
 }
-h1{
+
+h1 {
     font-size: 80px;
-   background: linear-gradient(
-        90deg,
-        #e4040f,
-        #965858,
-        #3c1f1f
-    );
+    background: linear-gradient(90deg,
+            #e4040f,
+            #965858,
+            #3c1f1f);
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -64,21 +63,19 @@ h1{
     justify-content: center;
     align-items: center;
 }
-h5{
-    color:#00FFFF;
+
+h5 {
+    color: #00FFFF;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-main{
-    margin: 0 auto;
-    padding: 50px 24px;
-}
-.search{
+
+.search {
     display: flex;
-      position: relative;
-      top: 49px;
-      right: -500px;
+    position: relative;
+    top: 49px;
+    right: -500px;
     width: max-content;
     align-items: center;
     padding: 14px;
@@ -86,20 +83,26 @@ main{
     background-color: #696666;
     width: 600px;
 }
-.search:focus-within{
-    background: linear-gradient(
-        90deg,
-        #3c1f1f,
-        #965858,
-        #a2373c
-    );
+
+.search:focus-within {
+    /* background-color: #eecdcd; */
+    background: linear-gradient(90deg,
+            #3c1f1f,
+            #965858,
+            #a2373c);
+
+    /* box-shadow: 0 0 5px rgb(230, 238, 0); */
 }
-.search-input{
+
+/* #e4040f,
+        #965858,
+        #3c1f1f */
+.search-input {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    font-family: 'Lexend',sans-serif;
+    font-family: 'Lexend', sans-serif;
     color: #ececec;
     margin-left: 14px;
     outline: none;
@@ -108,29 +111,31 @@ main{
     width: 300px;
     flex: 1;
 }
-.search-input::placeholder, .search-icon{
+
+.search-input::placeholder,
+.search-icon {
     color: rgba(0, 0, 0.03);
 }
 
- 
-.section{
+
+.section {
 
     margin-bottom: 70px;
 }
- 
-.section:last-child{
+
+.section:last-child {
     margin-bottom: 0;
 }
- 
-.section-eyebrow{
+
+.section-eyebrow {
     font-family: var(--font-mono);
-     color:#00FFFF;
+    color: #00FFFF;
     font-size: 14px;
     letter-spacing: 2px;
     margin-bottom: 6px;
 }
- 
-.section h2{
+
+.section h2 {
     font-family: var(--font-display);
     font-size: 28px;
     font-weight: 600;
@@ -138,12 +143,13 @@ main{
     padding-bottom: 16px;
     border-bottom: 1px solid var(--border);
 }
- 
-.member-conteinr{
+
+.member-conteinr {
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 24px;
 }
+
 .scrol {
     width: 100%;
     overflow: auto;
@@ -161,14 +167,16 @@ main{
     justify-content: center;
     gap: .5em;
 }
-.member-card::scroll-marker{
+
+.member-card::scroll-marker {
     content: '';
     height: 1em;
     width: 1em;
     background-color: cadetblue;
     border-radius: 50%;
 }
-.member-card::scroll-marker:target-current{
+
+.member-card::scroll-marker:target-current {
     background-color: crimson;
 }
 
@@ -208,13 +216,13 @@ main{
 
 }
 
-.scrol2{
+.scrol2 {
     width: 100%;
     overflow: auto;
     display: flex;
     margin: 3em auto;
     gap: 1em;
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
     anchor-name: --scrol2;
     scroll-snap-type: x mandatory;
     scroll-marker-group: after;
@@ -225,6 +233,7 @@ main{
     justify-content: center;
     gap: .5em;
 }
+
 .scrol2::-webkit-scrollbar {
     display: none;
 
@@ -262,7 +271,7 @@ main{
 
 }
 
-.scrol3{
+.scrol3 {
     width: 100%;
     overflow: auto;
     display: flex;
@@ -279,6 +288,7 @@ main{
     justify-content: center;
     gap: .5em;
 }
+
 .scrol3::-webkit-scrollbar {
     display: none;
 
@@ -315,12 +325,70 @@ main{
     cursor: auto;
 
 }
+
+.scrol4 {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    margin: 3em auto;
+    gap: 1em;
+    scroll-behavior: smooth;
+    anchor-name: --scrol4;
+    scroll-snap-type: x mandatory;
+    scroll-marker-group: after;
+}
+
+.scrol4::scroll-marker-group {
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+}
+
+.scrol4::-webkit-scrollbar {
+    display: none;
+
+}
+
+.scrol4::scroll-button(right),
+.scrol4::scroll-button(left) {
+    content: '⇥';
+    border: none;
+    background-color: #ec0000;
+    font-family: consolas;
+    font-size: 1rem;
+    color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding-bottom: .1em;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --scrol4;
+    position-area: right center;
+    translate: -50%;
+}
+
+.scrol4::scroll-button(left) {
+    content: '⇤';
+    position-area: left center;
+    translate: 50%;
+}
+
+.scrol4::scroll-button(right):disabled,
+.scrol4::scroll-button(left):disabled {
+    opacity: 0.5;
+    cursor: auto;
+
+}
+
 @media(max-width) {
     .member-card {
         flex: 0 0 100%;
     }
 }
-.member-card{
+
+.member-card {
+
     flex: 0 0 300px;
     background-color: var(--panel);
     border: 1px solid var(--border);
@@ -330,9 +398,9 @@ main{
     flex-direction: column;
     transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
- 
-.member-card:hover{
-    background-color: rgb(108, 74, 35);
+
+.member-card:hover {
+    background-color: rgb(108, 74, 34);
     transform: translateY(-6px);
     border-color: rgba(236, 232, 222, 0.25);
     box-shadow: 0 16px 30px rgba(0, 0, 0, 0.35);
@@ -342,25 +410,33 @@ main{
     height: 3px;
     width: 100%;
 }
- 
-.accent-gold{ background-color: var(--gold); }
-.accent-teal{ background-color: var(--teal); }
-.accent-coral{ background-color: var(--coral); }
- 
-.member-card img{
+
+.accent-gold {
+    background-color: var(--gold);
+}
+
+.accent-teal {
+    background-color: var(--teal);
+}
+
+.accent-coral {
+    background-color: var(--coral);
+}
+
+.member-card img {
     width: 100%;
     height: 260px;
     object-fit: cover;
     display: block;
     filter: grayscale(15%);
 }
- 
-.card-body{
+
+.card-body {
     padding: 20px;
     text-align: left;
 }
 
-.card-span{
+ .card-span{
     display: flex;
     justify-content: space-between;
 }
@@ -384,16 +460,15 @@ main{
     border: none;
     font-size: 30px;
 }
-
-.member-name{
+.member-name {
     font-family: var(--font-display);
     font-size: 19px;
     font-weight: 600;
     color: var(--text);
     margin-bottom: 8px;
 }
- 
-.member-desc{
+
+.member-desc {
     font-size: 14px;
     line-height: 1.6;
     color: var(--text-muted);
@@ -413,11 +488,9 @@ main{
 }
 
 .login-box {
-    background: radial-gradient(
-            circle at  center,
-            rgba(229, 9, 20, 0.18),
-            transparent 70%
-        ),
+    background: radial-gradient(circle at top center,
+            rgba(229, 9, 20, 0.16),
+            transparent 45%),
         #050505;
     width: 350px;
     padding: 30px 30px;
@@ -433,7 +506,7 @@ main{
     color: antiquewhite;
     display: block;
     border: none;
-    border-bottom: 2px solid antiquewhite ;
+    border-bottom: 2px solid antiquewhite;
     background: none;
     width: 90%;
     margin: 10px 0px;
@@ -442,7 +515,7 @@ main{
 }
 
 .login-box input:focus {
-    border-bottom: 2px solid  rgb(150, 25, 25)  ;
+    border-bottom: 2px solid rgb(150, 25, 25);
     transform: scale(1.03);
     transition: 0.5s;
     filter: brightness(1.3);
@@ -458,7 +531,7 @@ main{
 }
 
 .login-box button {
-    background-color:rgba(229, 9, 20, 0.6);
+    background-color: rgba(229, 9, 20, 0.6);
     border: #050505;
     border-radius: 10px;
     color: antiquewhite;
@@ -475,7 +548,7 @@ main{
     transform: translateY(1px) scale(1.02);
 }
 
-.login-box button:active{
+.login-box button:active {
     transition: 3s;
     border-bottom: 1px solid rgb(91, 52, 52);
     background-color: rgba(229, 9, 20, 0.25);
@@ -483,7 +556,7 @@ main{
     transform: translatey(1px) translateX(-2px) scale(0.8);
 }
 
-.login-box a{
+.login-box a {
     color: white;
     position: absolute;
     bottom: 40px;
@@ -491,7 +564,7 @@ main{
     text-decoration: none;
 }
 
-.login-box a:hover{
+.login-box a:hover {
     transition: 0.5s ease-in-out;
     transform: translateX(5px) scale(1.01);
 }
@@ -509,15 +582,17 @@ main{
 }
 
 #musicBtn:hover {
-    
+
     background-color: #e50914;
     color: white;
     transform: scale(1.05);
     box-shadow: 0 0 15px #e50914;
 }
-header{
+
+header {
     position: relative;
 }
+
 #menuButton {
     position: absolute;
     top: 20px;
@@ -529,40 +604,46 @@ header{
     cursor: pointer;
     transition: 0.3s;
 }
+
 #menuButton:hover {
     color: #e50914;
     transform: scale(1.1);
 }
+
 #menu {
     display: none;
 }
+
 #menu.active {
-    border:2px solid var(--red-dark);
+    border: 2px solid var(--red-dark);
     padding: 15px;
-     gap: 3px;
+    gap: 3px;
     display: flex;
     flex-direction: column;
-    background:black;
+    background: black;
     width: 150px;
-     height: 300px;
-     border-radius: 30px;
-  
+    height: 300px;
+    border-radius: 30px;
+
 }
-.icon-mune{
+
+.icon-mune {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
     padding: 5px;
     transition: 0.3s;
     cursor: pointer;
 }
-a:hover{
-    border:2px solid #ffffff;
+
+a:hover {
+    border: 2px solid #ffffff;
     border-radius: 12px;
- background-color: #e50914;
+    background-color: #e50914;
     transform: scale(1.1);
 }

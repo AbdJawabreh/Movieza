@@ -61,11 +61,8 @@ stars.forEach((star)=>{
         star.style.color = "black";
         FavoriteCardCopy.remove();
         isfavorite = false;
+        });
     });
-    });
-    
-    
-    
 });
 
 const menuButton = document.getElementById("menuButton");
