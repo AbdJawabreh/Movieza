@@ -52,7 +52,7 @@ stars.forEach((star)=>{
         }
 
         else{
-            star.style.color = "black";
+            star.style.color = "white";
             FavoriteCardCopy.remove();
             isfavorite = false;
         }
